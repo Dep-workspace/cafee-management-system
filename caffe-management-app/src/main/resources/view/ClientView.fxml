@@ -20,10 +20,10 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <VBox layoutX="417.0" layoutY="64.0" prefHeight="121.0" prefWidth="308.0">
+      <VBox layoutX="563.0" layoutY="64.0" prefHeight="121.0" prefWidth="162.0">
          <children>
             <Label text="ID" />
-            <TextField fx:id="txtId" editable="false" />
+            <TextField fx:id="txtId" />
             <Label text="Name" />
             <TextField fx:id="txtName" />
             <Label text="Contact" />
@@ -31,17 +31,21 @@
          </children>
       </VBox>
       <Button fx:id="btnNewOrder" layoutX="608.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnNewOrderOnAction" text="+ New Order" />
-      <TableView fx:id="tblOrderDetails" layoutX="14.0" layoutY="64.0" prefHeight="121.0" prefWidth="384.0">
+      <TableView fx:id="tblOrderDetails" layoutX="5.0" layoutY="64.0" prefHeight="121.0" prefWidth="554.0">
         <columns>
-          <TableColumn prefWidth="74.0" text="ID" />
-          <TableColumn prefWidth="76.0" text="Name" />
-            <TableColumn prefWidth="107.0" text="Contact" />
-            <TableColumn prefWidth="126.0" text="Status" />
+          <TableColumn prefWidth="61.0" text="ID" />
+          <TableColumn prefWidth="79.0" text="Name" />
+            <TableColumn prefWidth="132.0" text="Contact" />
+            <TableColumn prefWidth="54.0" text="BK" />
+            <TableColumn prefWidth="56.0" text="SC" />
+            <TableColumn prefWidth="51.0" text="TS" />
+            <TableColumn prefWidth="48.0" text="WB" />
+            <TableColumn prefWidth="83.0" text="Status" />
         </columns>
       </TableView>
       <ImageView fitHeight="186.0" fitWidth="153.0" layoutX="43.0" layoutY="235.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../../../../java-se/io/network-io-object-transfer/client-app/src/main/resources/assert/Bigkingchiken.jpeg" />
+            <Image url="@../assert/Bigkingchiken.jpeg" />
          </image>
       </ImageView>
       <Spinner fx:id="spnBigKing" layoutX="43.0" layoutY="424.0" prefHeight="24.0" prefWidth="153.0" />
@@ -50,17 +54,17 @@
       <Spinner fx:id="spnWhopperBeef" layoutX="586.0" layoutY="421.0" prefHeight="24.0" prefWidth="153.0" />
       <ImageView fitHeight="186.0" fitWidth="153.0" layoutX="230.0" layoutY="231.0">
          <image>
-            <Image url="@../../../../../../../java-se/io/network-io-object-transfer/client-app/src/main/resources/assert/superchickenburger.jpeg" />
+            <Image url="@../assert/superchickenburger.jpeg" />
          </image>
       </ImageView>
       <ImageView fitHeight="192.0" fitWidth="153.0" layoutX="417.0" layoutY="224.0">
          <image>
-            <Image url="@../../../../../../../java-se/io/network-io-object-transfer/client-app/src/main/resources/assert/texassmoke.jpeg" />
+            <Image url="@../assert/texassmoke.jpeg" />
          </image>
       </ImageView>
       <ImageView fitHeight="186.0" fitWidth="147.0" layoutX="586.0" layoutY="224.0">
          <image>
-            <Image url="@../../../../../../../java-se/io/network-io-object-transfer/client-app/src/main/resources/assert/whopperbeef.jpeg" />
+            <Image url="@../assert/whopperbeef.jpeg" />
          </image>
       </ImageView>
       <Button fx:id="btnPlaceOrder" defaultButton="true" layoutX="601.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" text="Place Order" />
